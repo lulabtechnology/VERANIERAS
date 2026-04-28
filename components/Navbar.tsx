@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, MessageCircle, X } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
 import { buildWhatsAppUrl, defaultWhatsAppMessage } from "@/lib/whatsapp";
 
@@ -20,14 +21,11 @@ export function Navbar() {
   return (
     <header className="fixed left-0 right-0 top-3 z-50 px-4 md:top-5">
       <div className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/55 bg-ivory/78 px-4 py-3 shadow-soft backdrop-blur-xl md:px-6">
-        <a href="#inicio" className="flex items-center gap-2" aria-label="Ir al inicio">
-          <img
-            src="/logo/veranieras-logo.svg"
-            alt="VERANIERAS"
-            width={184}
-            height={60}
-            className="h-8 w-auto md:h-9"
-          />
+        <a href="#inicio" className="flex items-center gap-3" aria-label="Ir al inicio">
+          <span className="relative block h-10 w-10 overflow-hidden rounded-full bg-ivory shadow-sm">
+            <Image src="/logo/veranieras-flor.png" alt="Logo Veranieras" fill className="object-contain p-1" priority />
+          </span>
+          <span className="font-display text-2xl tracking-[0.08em] text-coffee md:text-3xl">VERANIERAS</span>
         </a>
 
         <nav className="hidden items-center gap-7 text-sm font-medium text-coffee/78 lg:flex">

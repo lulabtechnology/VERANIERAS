@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --cream: #F1E5D2;
   --sand: #E4CDA9;
@@ -100,3 +104,8 @@ img {
     transition-duration: 0.001ms !important;
   }
 }
+
+
+/* Hardening visual: evita que la web cargue sin estructura si una clase falla */
+.site-shell { isolation: isolate; }
+.preloader-logo { filter: drop-shadow(0 22px 38px rgba(58, 42, 32, .16)); }
