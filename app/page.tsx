@@ -5,7 +5,7 @@ import {
   HandHeart,
   Instagram,
   MessageCircle,
-  PalmTree,
+  Palmtree,
   Sparkles,
   Star,
   Sun,
@@ -68,7 +68,7 @@ const benefits = [
   { icon: HandHeart, title: "Hecho a mano", text: "Cada pieza nace con intención." },
   { icon: Gem, title: "Piezas con personalidad", text: "Detalles únicos para tu estilo." },
   { icon: MessageCircle, title: "Compra fácil", text: "Te atendemos directo por WhatsApp." },
-  { icon: PalmTree, title: "Inspiración tropical", text: "Mar, sol y Panamá en cada detalle." },
+  { icon: Palmtree, title: "Inspiración tropical", text: "Mar, sol y Panamá en cada detalle." },
   { icon: Gift, title: "Ideal para regalar", text: "Accesorios especiales y memorables." },
 ];
 
